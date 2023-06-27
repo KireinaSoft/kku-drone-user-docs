@@ -24,12 +24,9 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "th",
     locales: ["th"],
+    defaultLocale: "th",
   },
 
   presets: [
@@ -38,20 +35,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // TODO: Make this project open source to let people contribute to the docs
+          // editUrl: "https://github.com/KireinaSoft/kku-drone-user-docs",
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -67,7 +55,7 @@ const config = {
       navbar: {
         title: "คู่มือการใช้งาน Drone Learning Space",
         logo: {
-          alt: "My Site Logo",
+          alt: "Drone Learning Space",
           src: "img/logo.svg",
         },
         items: [
@@ -77,9 +65,9 @@ const config = {
             position: "left",
             sidebarId: "tutorialSidebar",
           },
-          // { to: "/blog", label: "Blog", position: "right" },
+          // TODO: Make this project open source to let people contribute to the docs
           // {
-          //   href: "https://github.com/facebook/docusaurus",
+          //   href: "https://github.com/KireinaSoft/kku-drone-user-docs",
           //   label: "GitHub",
           //   position: "right",
           // },
@@ -87,47 +75,6 @@ const config = {
       },
       footer: {
         style: "dark",
-        // links: [
-        //   {
-        //     title: "Docs",
-        //     items: [
-        //       {
-        //         label: "Tutorial",
-        //         to: "/docs/intro",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "Community",
-        //     items: [
-        //       {
-        //         label: "Stack Overflow",
-        //         href: "https://stackoverflow.com/questions/tagged/docusaurus",
-        //       },
-        //       {
-        //         label: "Discord",
-        //         href: "https://discordapp.com/invite/docusaurus",
-        //       },
-        //       {
-        //         label: "Twitter",
-        //         href: "https://twitter.com/docusaurus",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "More",
-        //     items: [
-        //       {
-        //         label: "Blog",
-        //         to: "/blog",
-        //       },
-        //       {
-        //         label: "GitHub",
-        //         href: "https://github.com/facebook/docusaurus",
-        //       },
-        //     ],
-        //   },
-        // ],
         copyright: `Copyright © ${new Date().getFullYear()} Drone Learning Space. Built with Docusaurus.`,
       },
       prism: {
