@@ -46,8 +46,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/kku-drone-user-docs-card.png",
       navbar: {
         title: "คู่มือการใช้งาน Drone Learning Space",
         logo: {
