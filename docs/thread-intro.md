@@ -1,4 +1,4 @@
 ---
-title: แนะนำระบบแชร์ประสบการณ์การ
-sidebar_position: 7
+title: แชร์ประสบการณ์
+sidebar_position: 8
 ---
