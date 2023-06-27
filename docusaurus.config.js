@@ -4,26 +4,20 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
+const projectName = "kku-drone-user-docs";
+const organizationName = "KireinaSoft";
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  url: `https://${organizationName}.github.io`,
   title: "Drone Learning Space User Guide",
   tagline: "คู่มือการใช้งาน Drone Learning Space สำหรับผู้ใช้งานแบบสมาชิก",
   favicon: "img/favicon.ico",
-
-  // Set the production url of your site here
-  url: "https://KireinaSoft.github.io",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/kku-drone-user-docs",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "KireinaSoft", // Usually your GitHub org/user name.
-  projectName: "kku-drone-user-docs", // Usually your repo name.
-
+  baseUrl: `/${projectName}/`,
+  projectName,
   trailingSlash: false,
-
   onBrokenLinks: "throw",
+  organizationName,
   onBrokenMarkdownLinks: "warn",
 
   i18n: {
