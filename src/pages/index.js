@@ -12,10 +12,31 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--primary button--lg" to="/docs/intro">
-            อ่านคู่มือ
-          </Link>
+        <div
+          style={{
+            gap: 10,
+            display: "flex",
+            flexWrap: "wrap",
+            flexDirection: "row",
+            justifyContent: "center",
+          }}
+        >
+          <div className={styles.buttons}>
+            <Link
+              to="/docs/intro"
+              className="button button--primary button--lg"
+            >
+              อ่านคู่มือ
+            </Link>
+          </div>
+          <div className={styles.buttons}>
+            <Link
+              to="https://drones.kku.ac.th"
+              className="button button--secondary button--lg"
+            >
+              ไปยังเว็บไซต์
+            </Link>
+          </div>
         </div>
       </div>
     </header>
