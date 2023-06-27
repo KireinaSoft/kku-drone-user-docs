@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "คู่มือการใช้งาน Drone Learning Space",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Drone Learning Space",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.หน้าแรก": {
+    "message": "หน้าแรก",
+    "description": "Navbar item with label หน้าแรก"
+  }
+}
